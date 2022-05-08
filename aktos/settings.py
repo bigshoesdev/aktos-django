@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-ENVIRONMENT = env("ENVIRONMENT")
+ENVIRONMENT = env("AKTOS_ENVIRONMENT")
 
 SECRET_KEY = env('SECRET_KEY')
 
