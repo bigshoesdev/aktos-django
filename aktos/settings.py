@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import environ
+import dj_database_url
 
 env = environ.Env(
     DEBUG=(bool, False)
@@ -67,6 +68,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+if ENVIRONMENT == 'production':
+    DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 AUTH_PASSWORD_VALIDATORS = [
     {
