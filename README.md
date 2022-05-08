@@ -19,13 +19,14 @@ python manage.py runserver
 3. Filtering  
 - Filtering based on these fields:  
 **min_previous_jobs_count**, **max_previous_jobs_count**, **previous_jobs_count**, **status**  
-http://localhost:8000/consumers/?previous_jobs_count=1
-http://localhost:8000/consumers/?min_previous_jobs_count=1
+http://localhost:8000/consumers/?previous_jobs_count=1  
+http://localhost:8000/consumers/?min_previous_jobs_count=1  
 http://localhost:8000/consumers/?status=1
 - Multiple filtering conditions work at the same time with each other:
 http://localhost:8000/consumers/?previous_jobs_count=1&status=collected
 4. Pagination
-- Using **PageNumberPagination** (https://www.django-rest-framework.org/api-guide/pagination/#pagenumberpagination)
+- Using **PageNumberPagination**  
+https://www.django-rest-framework.org/api-guide/pagination/#pagenumberpagination
 - Queries  
 http://localhost:8000/consumers/?page=1  
 http://localhost:8000/consumers/?page=1&page_size=50
