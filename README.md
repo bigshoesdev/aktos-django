@@ -40,3 +40,11 @@ http://localhost:8000/consumers/?previous_jobs_count=1&status=collected&page_siz
 ```bash
 pytest
 ```
+
+## Swagger API Docs
+http://localhost:8000/docs/
+
+## Heroku CLOUD URL
+https://aktos.herokuapp.com/consumers/  
+https://aktos.herokuapp.com/admin/  
+https://aktos.herokuapp.com/docs/
