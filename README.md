@@ -22,7 +22,7 @@ python manage.py runserver
 http://localhost:8000/consumers/?previous_jobs_count=1  
 http://localhost:8000/consumers/?min_previous_jobs_count=1  
 http://localhost:8000/consumers/?status=1
-- Multiple filtering conditions work at the same time with each other:
+- Multiple filtering conditions work at the same time with each other:  
 http://localhost:8000/consumers/?previous_jobs_count=1&status=collected
 4. Pagination
 - Using **PageNumberPagination**  
